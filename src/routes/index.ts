@@ -20,8 +20,7 @@ routes.get(
     <style>
     body{margin: 50px auto;width: 80%;}
     h1{text-align:center;}
-    a{color:black;
-      text-decoration: none;
+    li a{color:black;
       margin: 5px;
       padding: 5px;
       line-height: 25px;}
@@ -33,7 +32,7 @@ routes.get(
 <p>Examples:
 <ul>
 <li>Original Image: <a href="/api/images?filename=one"> One </a></li> 
- <ul>
+<ul>
 <li><a href="/api/images?filename=one&width=100&height=100">one 100*100</a></li>
 <li><a href="/api/images?filename=one&width=200&height=200">one 200*200</a></li>
 <li><a href="/api/images?filename=one&width=300&height=300">one 300*300</a></li>
