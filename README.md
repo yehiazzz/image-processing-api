@@ -43,22 +43,3 @@ http://localhost:3000/api/images?filename=one&width=200&height=200
 Will scale the one image to 200 by 200 pixels and store the resulting image.
 On subsequent calls will serve the resized image instead of resizing the
 original again.
-
-#### Example 4
-
-http://localhost:3000/api/images?filename=one&width=-200&height=200
-Invalid width parameter that will be hinted to.
-
-#### Example 5
-
-http://localhost:3000/api/images?filename=one&width=200
-Missing height parameter that will be hinted to.
-
-### Notes
-
-- Images are served from `assets/images/full`. Further images with the extension
-  can be put into that directory, but the filetype is not checked
-  (not required in exercise).
-- Image thumbs will be stored in `assets/images/thumb` and can be deleted from
-  there to verify that in that case they will be re-created on subsequent calls
-  to the same endpoint.
